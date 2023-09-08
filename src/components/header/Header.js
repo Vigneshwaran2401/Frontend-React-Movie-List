@@ -10,7 +10,7 @@ const Header = () => {
     return (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-            <Navbar.Brand href="/" style={{"color": "gold"}}>
+            <Navbar.Brand href="Frontend-React-Movie-List/" style={{"color": "gold"}}>
                 <FontAwesomeIcon icon={faVideoSlash} /> Movie App  
             </Navbar.Brand>
             <Navbar.Toggle id="navScroll" />

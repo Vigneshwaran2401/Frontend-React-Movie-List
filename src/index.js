@@ -10,7 +10,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/*" element={<App />} />
+        <Route path="Frontend-React-Movie-List/*" element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
