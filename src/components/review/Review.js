@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import {Container, Row, Col} from 'react-bootstrap';
 import ReviewForm from "../reviewForm/ReviewForm";
 import React from "react";
+import "./Review.css";
 
 const Review = ({getMovieData, movie, reviews, setReviews}) => {
     const revText = useRef();
@@ -34,7 +35,7 @@ const Review = ({getMovieData, movie, reviews, setReviews}) => {
             </Row>
             <Row className="mt-2">
                 <Col>
-                    <img src={movie?.poster} alt={movie.title} />
+                    <img src={movie.poster} alt={movie.title} />
                 </Col>
                 <Col>
                     {
