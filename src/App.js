@@ -6,7 +6,7 @@ import Home from './components/home/Home';
 import { Route, Routes } from 'react-router-dom';
 import Header from './components/header/Header';
 import Trailer from './components/trailer/Trailer';
-import Reviews from './components/reviews/Reviews';
+import Review from './components/review/Review';
 import NotFound from './components/notFound/NotFound';
 
 function App() {
@@ -46,7 +46,7 @@ useEffect(() => {
         <Route path="/" element={<Layout />} >
           <Route path="/" element={<Home movies= {movies} />} />
           <Route path='/Trailer/:ytTrailerId' element={<Trailer />} />
-          <Route path="/Reviews/:movieId" element={<Reviews getMovieData={getMovieData} movie={movie} reviews={reviews} setReviews={setReviews} />}></Route>
+          <Route path="/Reviews/:movieId" element={<Review getMovieData={getMovieData} movie={movie} reviews={reviews} setReviews={setReviews} />}></Route>
           <Route path="*" element={<NotFound />}></Route>
         </Route>
      </Routes>
