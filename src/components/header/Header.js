@@ -10,14 +10,14 @@ const Header = () => {
     return (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-            <Navbar.Brand href="Frontend-React-Movie-List/" style={{"color": "gold"}}>
+            <Navbar.Brand href="/Frontend-React-Movie-List" style={{"color": "gold"}}>
                 <FontAwesomeIcon icon={faVideoSlash} /> Movie App  
             </Navbar.Brand>
             <Navbar.Toggle id="navScroll" />
             <Navbar.Collapse id="navScroll">
                 <Nav className="me-auto my-2 my-lg-0" style={{"maxHeight": "100px"}}>
-                    <NavLink to="/" className="nav-link" end>Home</NavLink>
-                    <NavLink to="/watchList" className="nav-link">Movies</NavLink>
+                    <NavLink to="/Frontend-React-Movie-List" className="nav-link" end>Home</NavLink>
+                    <NavLink to="/Frontend-React-Movie-List/watchList" className="nav-link">Movies</NavLink>
                 </Nav>
                 <Button variant="outline-info" className="me-2">Register</Button>
                 <Button variant="outline-info" className="me-2">Login</Button>
